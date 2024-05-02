@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bootstrap</title>
+  </head>
+  <body style="font-family: poppins" >
+    <!-- Navigasi Start -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/logos/genshin-logo.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="assets/logos/genshin-logo.png" height="30"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Region
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Mondstadt</a></li>
+                  <li><a class="dropdown-item" href="#">Liyue</a></li>
+                  <li><a class="dropdown-item" href="#">Inazuma</a></li>
+                  <li><a class="dropdown-item" href="#">Sumeru</a></li>
+                  <li><a class="dropdown-item" href="#">Fontaine</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Character</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigasi End -->
+    
+    <!-- Carousel Start  -->
+    <div id="carouselExampleDark" class="carousel slide carousel-fade mt-5" data-bs-ride="true" >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="assets/images/yelan.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/images/raiden-shogun.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/images/shenhe.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel End  -->
+    
+    
+    <!-- Content Start -->
+    <div class="container-fluid p-0 bg-white">
+      <div class="container-fluid mt-2 p-3">
+        <h1 class="fw-bolder mb-2">Welcome To Genshin Impact</h1>
+        <p class="fw-light">Genshin Impact is an action-adventure game that combines RPG elements with stunning graphics and fast-paced gameplay mechanics. Players explore a vast open world, battle enemies, solve puzzles, and collect characters with unique abilities and powers.</p>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark text-white pt-2">
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Highlight</li>
+        </ol>
+      </nav>
+      <h2 class="d-inline-block border-start border-danger p-2 border-5">Highlight Update 4.6</h2>
+      <img src="assets/images/4.6.png" class="img-fluid mx-auto d-block mt-2" width="100%">
+      <div class="accordion mt-3 " id="accordionPanelsStayOpenExample" data-bs-theme="dark">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Version 4.6 Banners for Phase 1
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <div class="card" style="width: 100%;">
+                <img src="assets/images/phase-1.jpeg" class="card-img-top" >
+                <div class="card-body">
+                  <p class="card-text"><strong>Arlecchino and Lyney Banners</strong> The Version 4.6 Banners for Phase 1 feature Arlecchino's banner release, alongside Lyney's Banner Rerun! Both banners are available from April 24, 2024, to May 14, 2024!
+                  The featured 4-stars in the Phase 1 Banners of Version 4.6 are Xiangling, Lynette, and Freminet, and are available for the same duration as Arlecchino and Lyney!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Version 4.6 Banners for Phase 2
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div class="card" style="width: 100%;">
+                <img src="assets/images/phase-2.jpeg" class="card-img-top" >
+                <div class="card-body">
+                  <p class="card-text"><strong>Wanderer and Baizhu Banner Rerun.</strong> On the other hand, the Version 4.6 Banners for Phase 2 feature Wanderer's and Baizhu's banner reruns! Their banners are slated to run from May 14, 2024 until June 4, 2024!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Version 4.6 Weapon Banners
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div class="card" style="width: 100%;">
+                <img src="https://assetsio.gnwcdn.com/Gnehsin-Impact-4.5-weapon-Banner-Arlecchino-signature.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" class="card-img-top" >
+                <div class="card-body">
+                  <p class="card-text">
+                    The Phase 1 weapon banner will feature Crimson Moon’s Semblance (Polearm) and The First Great Magic (Bow). The phase 2 weapon banner should feature Tulaytullah’s Remembrance (Catalyst) and Jadefall’s Splendor (Catalyst).
+                    The 4-star weapons for the first phase are Favonius Warbow, Eye of Perception, Portable Power Saw, Dragon’s Bane, and The Dockhand’s Assistant. The 2nd phase 4-star weapons are yet to be revealed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content End -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
